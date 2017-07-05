@@ -11,7 +11,7 @@ def print_out(report, arg=None, input_file="game_stat.txt"):
         print(report(input_file, arg))
 
 
-"""print_out(count_games)
+print_out(count_games)
 print_out(decide, 2009)
 print_out(get_latest)
 print_out(count_by_genre, "RPG")
@@ -25,5 +25,5 @@ print_out(get_selling_avg)
 print_out(count_longest_title)
 print_out(get_date_avg)
 print_out(get_game, "Populous")
-print_out(count_grouped_by_genre)"""
+print_out(count_grouped_by_genre)
 print_out(get_date_ordered)

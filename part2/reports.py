@@ -113,13 +113,6 @@ def sum_sold(file_name):
     return sum(copies_list)
 
 
-"""def get_selling_avg(file_name):
-    copies_list = []
-    for game in read_games(file_name):
-        copies_list.append(game["copies"])
-    return mean(copies_list)"""
-
-
 def get_selling_avg(file_name):
     copies_list = []
     for game in read_games(file_name):
@@ -169,8 +162,8 @@ def get_date_ordered(file_name):
         ab.append(game["release"])
         ab.append(game["title"])
         year_and_title.append(ab)
-    sorted_title_by_release = sorted(year_and_title, key=lambda student: student[1], reverse=False)
-    sorted_title_by_release = sorted(sorted_title_by_release, key=lambda student: student[0], reverse=True)
+    sorted_title_by_release = sorted(year_and_title, key=lambda title: title[1], reverse=False)
+    sorted_title_by_release = sorted(sorted_title_by_release, key=lambda year: year[0], reverse=True)
     titles_by_release = []
     for i in sorted_title_by_release:
         titles_by_release.append(i[1])
